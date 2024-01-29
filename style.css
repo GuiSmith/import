@@ -1,0 +1,96 @@
+nav {
+    color: black;
+    margin: 0.5em;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover {
+    opacity: 0.5;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-list {
+    position: absolute;
+    display: none;
+}
+.dropdown-list * {
+    display: block;
+}
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+.titles {
+    text-align: center;
+}
+form {
+    width: 60%;
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.form-group {
+    margin-top: 1em
+}
+.options button {
+    margin-right: 1em;
+}
+/* Style for the search bar */
+.search-bar {
+    display: inline-block;
+    margin: 1em auto;
+}
+.search-input, .search-button, .search-option {
+    height: 40px;
+}
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-button {
+    padding: auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Define table styles */
+.styled-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style table header */
+.styled-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Style alternating rows */
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+.styled-table tbody tr:hover {
+    background-color: #ddd;
+}
