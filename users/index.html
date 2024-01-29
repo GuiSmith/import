@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Import Project</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+       <nav class="navbar"></nav>
+       <!-- Header -->
+       <div class = "titles">
+            <h2>Usuários</h2>
+            <h4>Cadastro de usuários</h4>
+       </div>
+       <!-- Options -->
+       <section class = "text-center" id = "options">
+            <div class="options">
+                <button id="newuser-button" class="btn btn-secondary">
+                    Novo
+                </button>
+                <button id="edituser-button" class="btn btn-secondary">
+                    Editar
+                </button>
+                <button class="btn btn-danger">
+                    Deletar
+                </button>
+            </div>
+            <!-- Search bar -->
+            <div class="search-bar">
+                <!-- Select dropdown for options -->
+                <select id="searchOption" class="search-option">
+                    <option value="name">Name</option>
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <!-- Search input -->
+                <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+                <!-- Search button -->
+                <button class="search-button">Pesquisar</button>
+            </div>
+       </section>
+       <!-- Table -->
+       <table class="styled-table"></table>
+       <!-- Form -->
+       <form id="new-user" action="" method = "POST">
+            <!-- Name -->
+            <div class = "form-group">
+                <label for="name-input" class = "form-label">Nome</label>
+                <input type="text" id = "name-input" name = "name" class = "form-control" required autofocus>
+            </div>
+            <!-- E-mail -->
+            <div class = "form-group">
+                <label for="email-input" class = "form-label">E-mail</label>
+                <input type="email" id = "email-input" name = "email" class = "form-control">
+            </div>
+            <!-- Password -->
+            <div class = "form-group">
+                <label for="password-input" class = "form-label">Password</label>
+                <input type="password" id = "password-input" name = "password" class = "form-control">
+            </div>
+            <!-- Submit -->
+            <div class = "form-group row">
+                <div class="col-lg-6 col-sm-12 text-left">
+                    <p class="feedback-element" style = "float: left"></p>
+                </div>
+                <div class="col-lg-6 col-sm-12 text-right">
+                    <button id="submit-button" class = "btn btn-info" type = "button" style = "float: right">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <script type = "module" src="script.js"></script>
+    </body>
+</html>
